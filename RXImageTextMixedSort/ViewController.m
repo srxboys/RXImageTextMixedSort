@@ -7,6 +7,12 @@
 //
 //图文混排
 
+/*
+    更多demo
+    https://github.com/srxboys?tab=repositories
+ */
+
+
 #import "ViewController.h"
 #import "RXRandom.h"
 #import "RXCellHeight.h"
@@ -39,7 +45,7 @@
     for(NSInteger i = 0; i < arc4random() % 100 + 1; i++) {
         NSString * name = [RXRandom randomChinasWithinCount:6];
         NSString * time = [RXRandom randomTimeCountdown];
-        NSString * img = [RXRandom randomImageURL];
+        NSString * img  = [RXRandom randomImageURL];
         NSString * text = [RXRandom randomChinasWithinCount:500];
         NSDictionary * dict = @{@"name"  : name,
                                 @"time"  : time,
